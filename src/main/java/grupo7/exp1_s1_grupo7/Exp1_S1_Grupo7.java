@@ -18,7 +18,7 @@ public class Exp1_S1_Grupo7 {
         // Solicitar número de cuenta (se espera un entero de 9 dígitos).
         System.out.print("Ingrese número de cuenta (9 dígitos): ");
         int numeroCuenta = scanner.nextInt();
-        if (!Validacion.validarNumeroCuenta(numeroCuenta)) {
+        if (!Validar.validarNumeroCuenta(numeroCuenta)) {
             // El método validarNumeroCuenta ya imprime el mensaje de error correspondiente.
             return;
         }
@@ -26,21 +26,21 @@ public class Exp1_S1_Grupo7 {
         // Solicitar saldo. Se asume que el saldo no puede ser negativo.
         System.out.print("Ingrese saldo: ");
         int saldo = scanner.nextInt();
-        if (!Validacion.validarSaldo(saldo)) {
+        if (!Validar.validarSaldo(saldo)) {
             return;
         }
 
         // Solicitar monto para girar.
         System.out.print("Ingrese monto a girar: ");
         int giro = scanner.nextInt();
-        if (!Validacion.validarGiro(giro, saldo)) {
+        if (!Validar.validarGiro(giro, saldo)) {
             return;
         }
 
         // Solicitar monto para depositar (abono).
         System.out.print("Ingrese monto a depositar: ");
         int abono = scanner.nextInt();
-        if (!Validacion.validarAbono(abono)) {
+        if (!Validar.validarAbono(abono)) {
             return;
         }
 
@@ -49,14 +49,14 @@ public class Exp1_S1_Grupo7 {
         // Solicitar nombre (se valida que sea una cadena compuesta solo por letras y espacios).
         System.out.print("Ingrese su nombre: ");
         String nombre = scanner.nextLine();
-        if (!Validacion.validarCadena(nombre)) {
+        if (!Validar.validarCadena(nombre)) {
             return;
         }
 
         // Solicitar una opción numérica para un menú (por ejemplo, entre 1 y 5).
         System.out.print("Ingrese una opción de menú (entre 1 y 5): ");
         int opcion = scanner.nextInt();
-        if (!Validacion.validarOpcionNumero(opcion, 1, 5)) {
+        if (!Validar.validarOpcionNumero(opcion, 1, 5)) {
             return;
         }
 
@@ -65,7 +65,7 @@ public class Exp1_S1_Grupo7 {
         // Solicitar una opción tipo VF (debe ser "S" o "F").
         System.out.print("Ingrese una opción (S o F): ");
         String opcionVF = scanner.nextLine();
-        if (!Validacion.validarOpcionVF(opcionVF)) {
+        if (!Validar.validarOpcionSN(opcionVF)) {
             return;
         }
 

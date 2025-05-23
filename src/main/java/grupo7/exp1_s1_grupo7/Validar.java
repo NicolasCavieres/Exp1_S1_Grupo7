@@ -8,7 +8,7 @@ package grupo7.exp1_s1_grupo7;
  *
  * @author ariel
  */
-public class Validacion {
+public class Validar {
 
     /**
      * Valida que el número de cuenta sea un entero de 9 dígitos.
@@ -124,7 +124,7 @@ public class Validacion {
      * @param opcion la opción ingresada (se espera "S" o "F").
      * @return true si la opción es S o F, false en caso contrario.
      */
-    public static boolean validarOpcionVF(String opcion) {
+    public static boolean validarOpcionSN(String opcion) {
         if (opcion == null || opcion.trim().isEmpty()) {
             System.out.println("Error: Debe ingresar una opción (S o F).");
             return false;

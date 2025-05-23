@@ -136,4 +136,32 @@ public class Validar {
         }
         return true;
     }
+    
+    public static boolean validarRut(String rut) {
+        // Verificar largo
+        if (rut.length() < 11 || rut.length() > 12) {
+            System.out.println("Error: El RUT debe tener entre 11 y 12 caracteres.");
+            return false;
+        }
+
+        // Verificar que contenga exactamente un guión
+        if (rut.chars().filter(c -> c == '-').count() != 1) {
+            System.out.println("Error: El RUT debe contener un único guión ('-').");
+            return false;
+        }
+
+        // Verificar que esté en la penúltima posición
+        if (rut.charAt(rut.length() - 2) != '-') {
+            System.out.println("Error: El guión debe estar antes del dígito verificador.");
+            return false;
+        }
+
+        // Verificar que solo tenga dígitos y un guión
+        if (!rut.matches("[0-9]+-[0-9kK]")) {
+            System.out.println("Error: El RUT solo debe contener números y un guión, sin puntos ni letras fuera del dígito verificador.");
+            return false;
+        }
+
+        return true;
+    }
 }

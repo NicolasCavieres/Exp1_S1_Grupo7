@@ -76,10 +76,8 @@ public class Clientes {
         } while (!Validar.validarCadena(apellidoMaterno));
 
         // Domicilio
-        do {
-            System.out.print("Ingrese domicilio: ");
-            domicilio = scanner.nextLine();
-        } while (!Validar.validarCadena(domicilio));
+        System.out.print("Ingrese domicilio: ");
+        domicilio = scanner.nextLine();
 
         // Comuna
         do {
@@ -88,10 +86,8 @@ public class Clientes {
         } while (!Validar.validarCadena(comuna));
 
         // Teléfono
-        do {
-            System.out.print("Ingrese teléfono: ");
-            telefono = scanner.nextLine();
-        } while (!Validar.validarCadena(telefono));
+        System.out.print("Ingrese teléfono: ");
+        telefono = scanner.nextLine();
 
         // Cuenta Corriente (se pide número y saldo)
         // Llamamos a la clase Cuenta Corriente

@@ -11,14 +11,14 @@ package grupo7.exp1_s1_grupo7;
 import java.util.Scanner;
 
 public class Clientes {
-    private String rut;
-    private String nombre;
-    private String apellidoPaterno;
-    private String apellidoMaterno;
-    private String domicilio;
-    private String comuna;
-    private String telefono;
-    // private CuentaCorriente cuentaCorriente;
+    final private String rut;
+    final private String nombre;
+    final private String apellidoPaterno;
+    final private String apellidoMaterno;
+    final private String domicilio;
+    final private String comuna;
+    final private String telefono;
+    // final private CuentaCorriente cuentaCorriente;
 
     // Constructor
     public Clientes(String rut, String nombre, String apellidoPaterno, String apellidoMaterno,
